@@ -13,10 +13,10 @@ namespace InvoiceManagement.Controllers
     [ApiController]
     public class InvoiceController : ControllerBase
     {
-        private readonly IInvoiceService _InvoiceService;
+    
         public InvoiceController(IInvoiceService InvoiceService)
         {
-            _InvoiceService = InvoiceService;
+
         }
 
         
