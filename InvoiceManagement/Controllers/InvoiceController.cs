@@ -19,8 +19,7 @@ namespace InvoiceManagement.Controllers
             _InvoiceService = InvoiceService;
         }
 
-        [HttpPost]
-        [Route("create-Invoice")]
+        
         [AllowAnonymous]
         public async Task<IActionResult> CreateInvoice([FromBody] Invoice model)
         {
@@ -29,16 +28,13 @@ namespace InvoiceManagement.Controllers
         }
 
 
-        [HttpPut]
-        [Route("update-Invoice")]
         public async Task<IActionResult> UpdateInvoice([FromBody] InvoiceViewModel model)
         {
             //Write your code here
             throw new NotImplementedException();
         }
 
-        [HttpDelete]
-        [Route("delete-Invoice")]
+        
         public async Task<IActionResult> DeleteInvoice(int id)
         {
             //Write your code here
@@ -46,16 +42,13 @@ namespace InvoiceManagement.Controllers
         }
 
 
-        [HttpGet]
-        [Route("get-Invoice-by-id")]
         public async Task<IActionResult> GetInvoiceById(int id)
         {
             //Write your code here
             throw new NotImplementedException();
         }
 
-        [HttpGet]
-        [Route("get-all-Invoices")]
+     
         public async Task<IEnumerable<Invoice>> GetAllInvoices()
         {
             //Write your code here
